@@ -6,7 +6,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.Stack;
-import java.util.TreeSet;
 
 public class Test {
 	
@@ -40,12 +39,19 @@ public class Test {
 //		int[][] commands = {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
 //		kNumber(array, commands);
 		
-		Set<String> set = new TreeSet<>();		
-		result = set(set);
+//		Set<String> set = new TreeSet<>();		
+//		result = set(set);
+//		
+//		String a = new String();
+//		
+//		System.out.println(result);
 		
-		String a = new String();
 		
-		System.out.println(result);
+		String sprdIds = "1231241,354435";
+		List<String> sPrdIdProps = new ArrayList<>(Arrays.asList(sprdIds.split(",")));
+		for(String item : sPrdIdProps) {
+			System.out.println(item);
+		}
 	}
 
 	private static Object set(Set<String> set) {
